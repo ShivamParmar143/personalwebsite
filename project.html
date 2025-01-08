@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: royalblue;
+            color: white;
+    }
+
+    .projects {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .projects h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .project {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .project img {
+        object-fit: cover;
+    }
+
+    .project .content {
+        padding: 1rem;
+    }
+
+    .project h2 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .project p {
+        margin: 0.5rem 0 0;
+        color: #555;
+    }
+</style>
+<body>
+  <header>
+    <h2>My Projects</h2>
+  </header>
+  <section class="projects">
+    <h1 style="text-align:center; padding:20px;">Projects</h1>
+    <div class="projects-container">
+      <div class="project">
+        <div class="project-thumbnail">
+          <img src="./project1.png" alt="Project 1 Thumbnail">
+        </div>
+        <div class="content">
+          <h2 class="project-title">E-commerce Website</h2>
+          <p class="project-description">An e-commerce website is a virtual storefront where customers can buy products and services online.</p>
+        </div>
+      </div>
+  
+      <div class="project">
+        <div class="project-thumbnail">
+          <img src="./project2.jpg" alt="Project 2 Thumbnail">
+        </div>
+        <div class="content">
+          <h2 class="project-title">tic-tac-toe</h2>
+          <p class="project-description">Tic-tac-toe is a paper-and-pencil game for two players where the goal is to be the first to get three of your marks in a row on a 3x3 grid.</p>
+        </div>
+      </div>
+  
+      <div class="project">
+        <div class="project-thumbnail">
+          <img src="./project3.jpg" alt="project 3 Thumbnail">
+        </div>
+        <div class="content">
+          <h2 class="project-title">Rock-paper-scissor</h2>
+          <p class="project-description">Rock, paper, and scissors game is a simple fun game in which both players have to make a rock, paper, or scissors. It has only two possible outcomes a draw or a win for one player and a loss for the other player.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
